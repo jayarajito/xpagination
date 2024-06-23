@@ -16,6 +16,7 @@ const App = () => {
         setEmployees(response.data);
       } catch (error) {
         console.error("Error Fetching the Data: ", error);
+        alert(error);
       }
     };
 

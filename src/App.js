@@ -11,12 +11,12 @@ const App = () => {
     const fetchEmployees = async () => {
       try {
         const response = await axios.get(
-          "https://geektrust.s3-ap-southeast-1.amazonaws.com/adminui-problem/members.json"
+          "https://geektrust.s3-ap-southeast-1.amazonaws.com/adminui-problem/members.json1"
         ); // Replace with your API endpoint
         setEmployees(response.data);
       } catch (error) {
         console.error("Error Fetching the Data: ", error);
-        alert(error);
+        alert("failed to fetch data");
       }
     };
 

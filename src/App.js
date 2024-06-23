@@ -67,19 +67,14 @@ const App = () => {
         </tbody>
       </table>
       <div className="pagination-buttons">
-        <button onClick={prevPage} disabled={currentPage === 1}>
-          Previous
-        </button>
+        <button onClick={prevPage}>Previous</button>
+        {/* disabled={currentPage === 1} */}
         <span className="page-info">
           {/* Page {currentPage} of {Math.ceil(employees.length / itemsPerPage)} */}
           <button>{currentPage}</button>
         </span>
-        <button
-          onClick={nextPage}
-          disabled={currentPage === Math.ceil(employees.length / itemsPerPage)}
-        >
-          Next
-        </button>
+        <button onClick={nextPage}>Next</button>
+        {/* disabled={currentPage === Math.ceil(employees.length / itemsPerPage)} */}
       </div>
     </div>
   );
